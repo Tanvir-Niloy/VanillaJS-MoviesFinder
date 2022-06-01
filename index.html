@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Movies Finder</title>
+    <!---Font-AwesomeCDN-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!----Custom-CSS--->
+    <link rel="stylesheet" href="./main.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <!----Logo-->
+      <div class="logo">
+        <div class="container">
+          <p>Movies<span>Finder</span></p>
+        </div>
+      </div>
+      <!---Logo-End--->
+      <!----Search-Container-->
+      <div class="search-container">
+        <div class="search-element">
+          <h3>Search Movie :</h3>
+          <input
+            type="text"
+            class="form-control"
+            placeholder="Search Movie title..."
+            id="movie-search-box"
+            onkeyup="findMovies()"
+          />
+          <div class="search-list" id="search-list">
+            <!----List-here--->
+            <!-- <div class="search-list-item">
+              <div class="search-item-thumbnail">
+                <img src="./medium-cover.jpg" alt="" />
+              </div>
+              <div class="search-item-info">
+                <h3>Gurdian of the galaxy vol:2</h3>
+                <p>2017</p>
+              </div>
+            </div> -->
+          </div>
+        </div>
+      </div>
+      <!---Search-Container-End---->
+      <!-----Results-Container---->
+      <div class="container">
+        <div class="result-container">
+          <div class="result-grid" id="result-grid">
+            <!----movies-informatoion-here---->
+            <div class="movie-poster">
+              <img src="./medium-cover.jpg" alt="" />
+            </div>
+            <div class="movie-info">
+              <h3 class="movie-title">Gurdian of the galaxy vol:2</h3>
+              <ul class="movie-misc-info">
+                <li class="year">2017</li>
+                <li class="rated">Ratings: PG13</li>
+                <li class="released">Released: 05 May 2017</li>
+              </ul>
+              <p class="genre"><b>Genre: </b>Action,advanture,comedy</p>
+              <p class="writer"><b>Writer: </b>James Gunn</p>
+              <p class="actore"><b>Actors: </b>Chris Patt,Zoe Saldan</p>
+              <p class="plot">
+                <b>Plot: </b>Lorem ipsum dolor sit, amet consectetur adipisicing
+                elit. Illum, adipisci.
+              </p>
+              <p class="language"><b>Language: </b>English</p>
+              <p class="awards">
+                <b><i class="fas fa-award"></i> </b>Nominated for Oscar
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-----JS-Script---->
+    <script src="./main.js"></script>
+  </body>
+</html>
